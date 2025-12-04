@@ -12,41 +12,58 @@ The dataset used for this analysis is a synthetic data derived from Kaggle.com
 
 ### Tools
 
-- Microsoft Excel: Data Cleaning
-- Microsoft Power BI: Data analysis and visualization
+- Data Cleaning and Preparation: Microsoft Excel
+- Data analysis and visualization: Microsoft Excel
 
 
-### Data Cleaning  
+### Data Cleaning and Preparation  
 
-The following tasks were performed:
-
-- Data loading and inspection
-- Rows with Quantity or Unit price columns less <=0 were removed
-- Total price was calculated (Quantity * Unit price)
-- Data formatting in preparation for the analysis.
-The cleaned data is saved on another excel sheet in the same document and labeled 'dup'
+The data was loaded into power query where data cleaning and prepartion was done:
+  - Duplicates were removed
+  - Year, month and day of the week were extracted from the date
+  - The patients were grouped based on their age: Young (<40), Midddle age (40-64), Elderly (65>)
 
 ### Data Analysis 
 
-The data was analyzed to find out the following:
-
-1. The total amount of sales made during the period under consideration
-2. The total quantity of goods sold during the outlined period
-3. Apart from UK, what are the top countries where sales were generated?
-4. Best performing sales month
+The analysis done was in 3 main segmentation: 
+1. Patients demographics (Gives details about the patients)
+2. Medical conditions (Sumarrizes each medical condition)
+3. Time progression (Highlights the time-related factors of the conditions)
 
 
-The visualization was done using Power BI. Find [dashboard](https://github.com/AdeyilolaAyomide/Online-Retail-Sales-Summary/blob/067eafdfb05c1233758d3f74446e9f7a19f6fc63/Online%20sales%20summary.pbix). Find [pdf_version](https://github.com/AdeyilolaAyomide/Online-Retail-Sales-Summary/blob/067eafdfb05c1233758d3f74446e9f7a19f6fc63/Online%20sales%20summary.pdf)
+The visualization was done using Microsoft Excel
 
-### Results 
+### Key Insights
 
-The results are as follows:
-
-1. The total amount of sales during the outlined period is $10.66M
-2. The total quantity sold: 5.59M products
-3. Sales from United Kingdom contributed 84.6% of the total purchase. Apart from UK, purhcase was made from 37 other countries. The top 10 are: Netherlands, EIRE, Germany, France, Australia, Spain, Switzerland, Belgium, Sweden and Japan in descending order.
-4. The highest purchase was recorded in November, 2011 ($1.51M).
-5. Based on MoM% change, May 2011 recorded the highest purchase compared to the previous month with an increase of 43.27% compared to April, 2011.
+1. $1.28B was spent on the management of NCDs across ~40,000 health facilities
+2. 37% of patients are middle-aged, and accounts for highest percentage of patients by age-group
+3. Males incurred more NCDs management costs
+4. While the greatest expenditure was for Diabetes management, Arthritis resulted in more patient admission
+5. Emergency cases accounted for 32.8% of patient admission
+6. 74.1% of patients were admitted during the weekdays.
 
 ### Recommendation 
-1. The store should reinforce marketing in the top 10 countries (apart from UK) that contributed to the purchase from the online store in order to increase visibility and drive more sales in those countries. 
+#### INDIVIDUALS
+1. Adopt Healthy Lifestyles for Prevention:
+-Reduce consumption of processed foods, sugars, salt, and unhealthy fats.
+-Engage in regular exercise
+-Quit tobacco
+
+2. Prioritize Regular Screening & Check-ups:
+- routine health screenings for common NCD risk factors for those in the middle-age range and above. 
+
+3. Improve Disease Self-Management:
+- For those already diagnosed, strictly adhere to prescribed treatment plans, medication schedules, and lifestyle modifications
+- Early presentation to healthcare facilities when needed to avoid emergency cases.
+
+#### GOVERNMENT AND KEY HEALTH STAKEHOLDERS
+1. Strengthen Primary Prevention and Health Promotion:
+- Invest in Public Health Campaigns
+- Create supportive environment 
+
+2. Integrate and Modernize Healthcare Delivery:
+- Significantly bolster Primary Health Care (PHC) facilities to focus on NCD screening, risk assessment, and long-term, non-emergency NCD management.
+
+3. Enhance Data and Research Capacity:
+- Ensure a functional NCD registry to track incidence, prevalence, mortality, and financial expenditure across all age groups and demographics.
+- Research Key Insights from the registry to facilitate targeted policy interventions.
