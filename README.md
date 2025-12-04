@@ -27,7 +27,7 @@ The data was loaded into power query where data cleaning and prepartion was done
 
 The analysis done was in 3 main segmentation: 
 1. Patients demographics (Gives details about the patients)
-2. Medical conditions (Sumarrizes each medical condition)
+2. Medical conditions (Sumarizes each medical condition)
 3. Time progression (Highlights the time-related factors of the conditions)
 
 
